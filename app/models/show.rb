@@ -12,5 +12,9 @@ class Show < ActiveRecord::Base
     show = Show.order(:rating).first.rating
   end
 
+  def Show::least_popular_show
+    show = Show.order(:rating).first.rating
+  end
+
 
 end
