@@ -4,4 +4,10 @@ class Show < ActiveRecord::Base
     show = Show.order(:rating).last.rating
   end
 
+  def Show::most_popular_show
+
+  end
+
+
+
 end
