@@ -21,7 +21,7 @@ class Show < ActiveRecord::Base
   end
 
   def Show::popular_shows
-    sum = Show.sum(:rating)
+    array = Show.where("rating > ?", 5)
   end
 
 end
